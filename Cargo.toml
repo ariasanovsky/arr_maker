@@ -1,0 +1,12 @@
+[package]
+name = "arr_maker"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arr_maker_macros = { workspace = true }
+
+[workspace.dependencies]
+arr_maker_macros = { version = "0.1.0", path = "arr_maker_macros" }
